@@ -1,0 +1,939 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Styling untuk container utama */
+.main-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #fff;
+}
+
+/* Styling untuk bagian Home */
+.home-section {
+    width: 100%;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+.home-section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Styling untuk wadah foto pribadi dan konten lainnya */
+.content-section {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Styling untuk foto pribadi di sebelah kiri */
+.foto-pribadi-container {
+    width: 23rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto-pribadi-container h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.foto-pribadi img {
+    width: 17rem;
+    height: auto;
+    border-radius: 20rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.foto-pribadi-container p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.foto-pribadi-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.foto-pribadi-container button:hover {
+    background-color: #45a049;
+}
+
+/* Elemen SMK */
+
+
+/* Styling untuk konten biodata di sebelah kanan */
+.biodata-content {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.biodata-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Styling untuk konten biodata */
+.biodata-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.biodata-row {
+    display: grid;
+    grid-template-columns: 150px 10px auto; /* Kolom untuk label, titik dua, dan konten */
+    align-items: center;
+}
+
+.biodata-row strong {
+    color: #333;
+    font-weight: bold;
+    text-align: left; /* Label mepet kiri */
+}
+
+.biodata-row span {
+    color: #555;
+    font-size: 1em;
+    text-align: left; /* Penjelasan mepet kiri */
+}
+
+.biodata-row:hover {
+    background-color: #e9f7e9;
+    transition: all 0.3s ease;
+}
+
+/* Styling untuk titik dua agar memiliki jarak */
+.biodata-row > :nth-child(2) {
+    text-align: left; /* Titik dua selalu di tengah */
+}
+
+.profil-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aboutme{
+    padding: 20px;
+}
+
+/*PENDIDIKAN*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.vertical-line {
+    width: 4px;
+    background-color: #28ff02;
+    height: 65rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Item pendidikan (untuk box + logo) */
+.education-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* Posisi item di kanan */
+.education-item.right {
+    justify-content: flex-start;
+    margin-right: 11rem;
+}
+
+/* Posisi item di kiri */
+.education-item.left {
+    justify-content: flex-end;
+    margin-left:11rem;
+}
+
+/* Box pendidikan dengan gambar dan teks di samping */
+.education-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 2px 3px rgb(89, 255, 0);
+    width: 25rem;
+    height: 10rem;
+    text-align: left;
+    display: flex;  /* Tata letak horizontal */
+    align-items: center;
+    gap: 20px;  /* Jarak antara gambar dan teks */
+    
+    
+}
+
+/* Styling khusus untuk box kiri (gambar di kanan) */
+.education-item.left .education-box {
+    flex-direction: row-reverse;  /* Membalik tata letak gambar dan teks */
+}
+
+/* Foto sekolah */
+.school-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Detail sekolah (teks di samping gambar) */
+.school-details h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.school-details-left{
+    text-align: end;
+}
+
+.school-details p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+
+.school-logo img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100rem;
+    background-color: white;
+    border: 4px  solid rgb(0, 255, 4);
+    object-fit: contain;
+}
+
+/* Logo di kanan (untuk item kanan) */
+.education-item.right .school-logo {
+    margin-left: 20px;
+}
+
+/* Logo di kiri (untuk item kiri) */
+.education-item.left .school-logo {
+    margin-right: 20px;
+    
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.education-box button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+/*SKILL*/
+.containerskill {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* Flexbox untuk menata gambar skill secara horizontal */
+.boxskill {
+    display: flex;
+    gap: 20px; /* Jarak antar gambar */
+}
+
+/* Setiap item skill dengan garis kotak */
+.skill-item {
+    border: 2px dashed #ccc; /* Garis kotak */
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+/* Styling gambar */
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Hover effect for each skill item */
+.skill-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.skill-item.canva:focus-within,
+.skill-item.canva:hover {
+    box-shadow: 0 0 15px 4px #02c0ce; 
+}
+
+.skill-item.html:focus-within,
+.skill-item.html:hover {
+    box-shadow: 0 0 15px 4px #dc4d28; /* HTML shadow color */
+}
+
+.skill-item.css:focus-within,
+.skill-item.css:hover {
+    box-shadow: 0 0 15px 4px #0174c3; /* CSS shadow color */
+}
+
+.skill-item.java:focus-within,
+.skill-item.java:hover {
+    box-shadow: 0 0 15px 4px #dbc43a; /* Java shadow color */
+}
+
+/* PROJEK */
+
+/* Kontainer utama */
+/* Kontainer samping untuk prestasi */
+.sidebox {
+    display: flex;
+    gap: 20px;
+}
+
+/* Setiap box prestasi */
+.boxprojek {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 16rem; /* Lebar diperbesar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #4CAF50;
+}
+
+/* Gambar dalam box prestasi */
+.boxprojek img {
+    width: 100%; /* Mengambil lebar penuh dari box */
+    height: 180px; /* Tinggi gambar lebih besar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Teks judul di bawah gambar */
+.boxprojek h2 {
+    font-size: 1em;
+    margin-top: 12px;
+    color: #333;
+}
+
+.boxprojek button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 2px;
+}
+
+.sideboxprojek{
+    display: flex;
+    padding: 10px;
+}
+
+.sideboxprojek img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.boxprojek img:hover{
+    transform: scale(1.1);
+    border: 4px solid #4CAF50 ;
+}
+
+.boxprojek button:hover{
+    transform: scale(1.1);
+}
+.education-box button:hover{
+    transform: scale(1.1);
+}
+
+.foto-pribadi-container button:active{
+    transform: scale(1.0);
+}
+.foto-pribadi-container button:hover{
+    transform: scale(1.1);
+}
+
+.poster .boxprojek{
+    height:23.5rem;
+}
+
+
+
+.popup-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.popup-button:hover {
+    background-color: #45a049;
+}
+
+/* Style untuk pop-up */
+.popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1000px; /* Lebar */
+        height: 650px; /* Tinggi */
+        padding: 20px; /* Padding di dalam pop-up */
+        background-color: black;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        z-index: 1000;
+}
+
+/* Pop-up content */
+.popup-content {
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    width: 950px; /* Lebar */
+    height: 600px;
+    animation: slideUp 0.5s ease-out;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color:white;
+}
+
+/* Animasi Fade In untuk pop-up */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animasi Slide Up untuk content */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Container sidebox */
+.sidebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Menambah jarak antara boxprestasi */
+    margin-top: 5rem;
+}
+
+/* Box prestasi styling */
+.boxprestasi {
+    background-color: #ffffff;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Menyusun konten secara vertikal */
+    align-items: center;
+    justify-content: flex-start; /* Konten mulai dari atas */
+    width: 18rem;
+    height: 14rem;
+    border-radius: 5px;
+    box-shadow: 4px 7px 5px #45a049;
+    
+}
+
+.boxprestasi img {
+    width: 14rem;
+    height: 12rem;
+    object-fit: cover; 
+    border-radius: 5px;
+    border: 2px solid #45a049;
+}
+
+/* Judul prestasi */
+.boxprestasi h2 {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #021526;
+}
+
+
+.container-icon {
+    padding: 10px;
+    width: fit-content;
+    background: linear-gradient(45deg, #28a745, #3e8e41);
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Jarak antar ikon */
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+.social-icons a.tiktok:hover {
+    background: #010101;
+}
+
+.social-icons a.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #bc1888, #cd486b);
+}
+
+.social-icons a.email:hover {
+    background: #ff4b2b;
+}
+
+.social-icons a.wa:hover {
+    background: #25d366;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover i {
+    color: white;
+}
+
+
+
+.social-icons2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Jarak antar ikon */
+    margin-top: 20px;
+    margin-right: 0px;
+    padding: 10px;
+}
+
+.social-icons2 .icon {
+    font-size: 40px;
+    color: #333;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.prestasi-container {
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: auto;
+    width: 100%;
+    height: auto;
+}
+
+.prestasi-container .nama h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.prestasi-container img {
+    width: 100%;
+    height: 15rem;
+    max-width: 500px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.prestasi-container img:hover {
+    transform: scale(1.05);
+}
+
+.prestasi-container p {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.6;
+    margin: 10px 0;
+    padding: 0px;
+}
+
+.logo-popup {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.logo-popup img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.logo-popup img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Gambar poster */
+.poster-canva img {
+    max-width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Deskripsi */
+.popup-content p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #45a049;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #e74c3c;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.footer-section ul {
+    margin-top: 0.5rem;
+}
+
+.footer-section a {
+    color: #45a049;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid #45a049;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+    .home-section {
+        padding: 15px;
+    }
+
+    .home-section h1 {
+        font-size: 2em; /* Kurangi ukuran font untuk layar kecil */
+    }
+    .content-section {
+        flex-direction: column; /* Tumpuk konten secara vertikal */
+        align-items: center;
+    }
+
+    .foto-pribadi-container {
+        width: 80%; /* Sesuaikan lebar */
+    }
+
+    .foto-pribadi img {
+        width: 12rem; /* Ukuran lebih kecil untuk gambar */
+    }
+
+    .foto-pribadi-container h2 {
+        font-size: 1.4em; /* Kurangi ukuran font */
+    }
+
+    .foto-pribadi-container button {
+        padding: 8px 16px; /* Kurangi ukuran tombol */
+        font-size: 0.9em;
+    }
+    
+    .biodata-content {
+        padding: 15px;
+    }
+
+    .biodata-container {
+        padding: 15px;
+    }
+
+    .biodata-row {
+        grid-template-columns: 100px 10px auto; /* Lebar kolom lebih kecil */
+    }
+
+    .biodata-content h1 {
+        font-size: 1.8em; /* Ukuran lebih kecil */
+    }
+
+    .container-icon {
+        margin-top: 15px;
+    }
+
+    .social-icons a {
+        font-size: 1.2em; /* Kurangi ukuran ikon */
+    }
+
+    .education-item.left, .education-item.right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .education-box {
+        width: 80%;
+        height: auto; /* Sesuaikan tinggi box secara otomatis */
+        margin-bottom: 20px; /* Memberi jarak antar box */
+    }
+
+    .vertical-line {
+        display: none; /* Sembunyikan garis vertikal pada tablet dan ponsel */
+    }
+
+   .sidebox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+        gap: 1rem;
+    }
+
+    .boxprojek {
+        width: 100%; /* Sesuaikan dengan kolom grid */
+    }
+    .popup {
+        width: 90%;
+        height: auto; /* Sesuaikan dengan konten */
+    }
+
+    .popup-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        padding: 10px;
+    }
+
+    .home-section h1 {
+        font-size: 1.5em; /* Ukuran lebih kecil untuk layar sangat kecil */
+    }
+    .foto-pribadi-container {
+        width: 95%; /* Lebar hampir penuh */
+    }
+
+    .foto-pribadi img {
+        width: 10rem; /* Lebih kecil untuk gambar di layar ponsel */
+    }
+
+    .foto-pribadi-container h2 {
+        font-size: 1.2em; /* Ukuran lebih kecil untuk font */
+    }
+
+    .foto-pribadi-container button {
+        font-size: 0.8em; /* Ukuran tombol lebih kecil */
+        padding: 6px 12px;
+    }
+
+    .container-icon {
+        margin-top: 10px;
+        flex-direction: column; /* Susun ikon secara vertikal jika diperlukan */
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 1em; /* Lebih kecil untuk layar ponsel */
+    }
+
+    .education-item {
+        flex: 1 1 calc(100% - 40px); /* 1 box dalam 1 baris di layar ponsel */
+        max-width: calc(100% - 40px);
+    }
+    .sidebox {
+        grid-template-columns: 1fr; /* 1 kolom */
+    }
+
+    .boxprojek {
+        width: 100%; /* Lebar penuh */
+    }
+    .boxprojek img {
+        height: 150px; /* Kurangi tinggi gambar */
+    }
+
+    .popup {
+        width: 95%;
+        height: auto; /* Sesuaikan dengan konten */
+    }
+
+    .popup-content {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Kurangi ukuran font untuk judul */
+    }
+
+    .popup-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
